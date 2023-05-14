@@ -103,9 +103,9 @@ const Autocomplete: React.FC<Props> = ({
 
   const handleKeyDown = useCallback(
     (event: KeyboardEvent<HTMLInputElement>) => {
-      const shouldGoDown = event.keyCode === KEY_MAP.DOWN && selectIndex > 0;
-      const shouldGoUp = event.keyCode === KEY_MAP.UP && selectIndex < matches.length - 1;
-      const shouldSelect = event.keyCode === KEY_MAP.ENTER && matches.length > 0;
+      const shouldGoDown = event.key === KEY_MAP.DOWN.key && selectIndex > 0;
+      const shouldGoUp = event.key === KEY_MAP.UP.key && selectIndex < matches.length - 1;
+      const shouldSelect = event.key === KEY_MAP.ENTER.key && matches.length > 0;
 
       if (shouldGoDown) {
         setSelectIndex((currentSelectIndex) => currentSelectIndex - 1);

@@ -30,6 +30,8 @@ module.exports = {
     'react/require-default-props': 0,
     '@typescript-eslint/no-unused-vars': 'error',
     'no-unused-vars': 'off',
+    'import/no-unresolved': 'off',
+    'no-shadow': 'off',
     'import/prefer-default-export': 0,
     'jsx-a11y/no-static-element-interactions': 0,
     'jsx-a11y/click-events-have-key-events': 0,
